@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Universal Tags Start*/
+/*Display Start*/
+* {margin: 0 auto;
+   box-sizing: border-box;
+   padding: 0;}
+
+body {line-height: 2.5;
+      background-color: #62cda3}
+
+.king-box {margin: 0 auto;
+           font-family: "bungee", sans-serif;
+           font-weight: 400;
+           font-style: normal;}
+/*Display End*/
+
+/*Header Start*/
+.head-box {display: flex;
+           justify-content: center;
+           padding: 20px 0px 20px 0px;
+           background-color: #4b3933;}
+/*Header End*/
+
+/*Navigation Start*/
+.nav-list {display: flex;
+           flex-wrap: wrap;
+           margin: 10;
+           justify-content: center;
+           list-style-type: none;
+           align-content: center;
+           background-color: #4b3933;}
+
+.nav-item {padding: 0px 15px 0px 15px;
+          background-color: #1D1D1D;}
+
+.nav-item a:link, a:visited {color: #fff0ce;
+                            text-decoration: none;}
+
+.nav-item a:hover {color: #7ce2ba;
+                  font-family: "bungee", sans-serif;
+                  font-weight: 800;
+                  font-style: normal;}
+
+#home {margin: 1px 11px 1px 11px;}
+
+#plan {margin:  1px 11px 1px 11px;}
+
+#explore {margin: 1px 11px 1px 11px;}
+
+#about {margin: 1px 11px 1px 11px;}
+/*Navigation End*/
+
+/*Footer Start*/
+.foot-box {display: flex;
+           justify-content: center;
+           color: #fff0ce;
+           background-color: #4b3933}
+/*Footer End*/
+/*Universal Tags End*/
+
+/*Home Tags Start*/
+/*Home Article Start*/
+.intro-box {display:flex;
+            text-align: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 5px 5px 5px 5px;}
+
+.intro-text {background-color: #ffe09a;
+             color: #211c1c;
+             border-style: solid;
+             border-color: #211c1c;}
+
+/*Home Article End*/
+
+/*Home Section Start*/
+.photo-boxes {display: flex;
+              flex-wrap: wrap;}
+/*Home Section End*/
+/*Home Tags End*/
+
+/*About Tags Start*/
+/*About Article Start*/
+.about-head {display: flex;
+             text-align: center;
+             background-color: black;
+             color: aqua;
+             width: 350px;}
+
+.about-box {display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 5px 5px 5px 5px;}
+
+.about-text {background-color: #ffe09a;
+             color: #211c1c;
+             border-style: solid;
+             border-color: #211c1c;}
+/*About Article Ends
+/*About Tags End*/
+
+/*Explore Tags Start*/
+.explore-boxes {display: flex;
+                flex-wrap: wrap;
+                color: aqua;}
+
+.link-head {background-color: black;
+            text-align: center;}
+/*Explore Tags End*/
