@@ -1,67 +1,104 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Universal Tags Start*/
+/*Universal Tags Start--------------------------------------------------------------------------------Universal Tags Start*/
 /*Display Start*/
 * {margin: 0 auto;
    box-sizing: border-box;
    padding: 0;}
 
 body {line-height: 2.5;
-      background-color: #62cda3}
+      background-color: #62cda3;}
 
 .king-box {margin: 0 auto;
            font-family: "bungee", sans-serif;
            font-weight: 400;
            font-style: normal;}
+
+@media screen and (max-width: 1199px){
+.king-box {width: 100%;}
+}
 /*Display End*/
 
 /*Header Start*/
 .head-box {display: flex;
            justify-content: center;
+           width: 100%;
            padding: 20px 0px 20px 0px;
            background-color: #4b3933;}
+
+@media screen and (max-width: 1199px){
+.head-box {width: 100%;}
+}
 /*Header End*/
 
 /*Navigation Start*/
 .nav-list {display: flex;
            flex-wrap: wrap;
-           margin: 10;
+           flex-direction: row;
+           margin: 0px;
+           padding: 5px 0px 25px 0px;
+           width: 100%;
            justify-content: center;
            list-style-type: none;
            align-content: center;
            background-color: #4b3933;}
 
 .nav-item {padding: 0px 15px 0px 15px;
-          background-color: #1D1D1D;}
+           background-color: #262626;}
 
 .nav-item a:link, a:visited {color: #fff0ce;
-                            text-decoration: none;}
+                             text-decoration: none;}
 
-.nav-item a:hover {color: #7ce2ba;
+.nav-item a:hover {color: #ffe09a;
                   font-family: "bungee", sans-serif;
                   font-weight: 800;
                   font-style: normal;}
 
-#home {margin: 1px 11px 1px 11px;}
+.nav-item a:active {color: #7ce2ba;
+                    font-family: "bungee", sans-serif;
+                    font-weight: 800;
+                    font-style: normal;}
 
-#plan {margin:  1px 11px 1px 11px;}
+#home {margin: 1px 25px 1px 25px;}
 
-#explore {margin: 1px 11px 1px 11px;}
+#plan {margin:  1px 25px 1px 25px;}
 
-#about {margin: 1px 11px 1px 11px;}
+#explore {margin: 1px 25px 1px 25px;}
+
+#about {margin: 1px 25px 1px 25px;}
+
+@media screen and (max-width: 599px){
+.nav-list{display: flex;
+          flex-direction: column;
+          text-align: center;}
+}
 /*Navigation End*/
 
 /*Footer Start*/
 .foot-box {display: flex;
            justify-content: center;
+           width: 100%;
            color: #fff0ce;
            background-color: #4b3933}
-/*Footer End*/
-/*Universal Tags End*/
 
-/*Home Tags Start*/
-/*Home Article Start*/
+@media screen and (max-width: 1199px){
+.foot-box {width: 100%;}
+}
+/*Footer End*/
+/*Universal Tags End////////////////////////////////////////////////////////////////////////////////////Universal Tags End*/
+
+/*Home Tags Start------------------------------------------------------------------------------------------Home Tags Start*/
+.home-head {display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #262626;
+            color: #fccc61;
+            width: 1000px;}
+
 .intro-box {display:flex;
             text-align: center;
             flex-wrap: wrap;
@@ -71,23 +108,27 @@ body {line-height: 2.5;
 .intro-text {background-color: #ffe09a;
              color: #211c1c;
              border-style: solid;
-             border-color: #211c1c;}
+             border-color: #211c1c;
+             width: 1000px;}
 
-/*Home Article End*/
-
-/*Home Section Start*/
 .photo-boxes {display: flex;
               flex-wrap: wrap;}
-/*Home Section End*/
-/*Home Tags End*/
 
-/*About Tags Start*/
-/*About Article Start*/
+@media screen and (max-width: 999px){
+.home-head {width: 90%;}
+.photo-boxes {flex-direction: column;}
+}
+/*Home Tags End///////////////////////////////////////////////////////////////////////////////////////////////Home Tags End*/
+
+/*About Tags Start-----------------------------------------------------------------------------------------About Tags Start*/
 .about-head {display: flex;
              text-align: center;
-             background-color: black;
-             color: aqua;
-             width: 350px;}
+             align-content: center;
+             margin-top: 15px;
+             margin-bottom: 15px;
+             background-color: #262626;
+             color: #fccc61;
+             width: 285px;}
 
 .about-box {display: flex;
             text-align: center;
@@ -98,9 +139,37 @@ body {line-height: 2.5;
 .about-text {background-color: #ffe09a;
              color: #211c1c;
              border-style: solid;
-             border-color: #211c1c;}
-/*About Article Ends
-/*About Tags End*/
+             border-color: #211c1c;
+             width: 1000px;
+             margin-bottom: 15px;}
+
+.info-box {display: flex;
+           flex-direction: column;
+           width: 1000px;
+           padding: 15px;
+           flex-wrap: wrap;
+           color: #211c1c;
+           margin-bottom: 25px;
+           margin-top: 5px;
+           background-color: #ffe09a;
+           border-style: solid;
+           border-color: #211c1c;}
+
+.enter-name {width: 350px;}
+
+.enter-email {width: 400px;}
+
+.enter-info {width: 400px;
+             height: 200px;}
+
+@media screen and (max-width: 599px){
+.about-head {width: 90%;}
+.info-box {width: 90%;}
+.enter-email {width: 90%;}
+.enter-info {width: 90%;}
+.enter-name {width: 90%;} 
+}
+/*About Tags End/////////////////////////////////////////////////////////////////////////////////////////////About Tags End*/
 
 /*Explore Tags Start*/
 .explore-boxes {display: flex;
