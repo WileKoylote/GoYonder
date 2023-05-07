@@ -1,19 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Universal Tags Start--------------------------------------------------------------------------------Universal Tags Start*/
+/*Universal Tags Start----------------------------------------------------------------------------Universal Tags Start*/
 /*Display Start*/
 * {margin: 0 auto;
    box-sizing: border-box;
    padding: 0;}
 
 body {line-height: 2.5;
-      background-color: #62cda3;}
+      background-image: url("img/hexback.png");
+      background-size: cover;}
 
 .king-box {margin: 0 auto;
            font-family: "bungee", sans-serif;
            font-weight: 400;
            font-style: normal;}
+
+img {object-fit: contain;
+     max-width: 100%;}
 
 @media screen and (max-width: 1199px){
 .king-box {width: 100%;}
@@ -50,7 +54,7 @@ body {line-height: 2.5;
 .nav-item a:link, a:visited {color: #fff0ce;
                              text-decoration: none;}
 
-.nav-item a:hover {color: #ffe09a;
+.nav-item a:hover {color: #FFD373;
                   font-family: "bungee", sans-serif;
                   font-weight: 800;
                   font-style: normal;}
@@ -68,7 +72,7 @@ body {line-height: 2.5;
 
 #about {margin: 1px 25px 1px 25px;}
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 600px){
 .nav-list{display: flex;
           flex-direction: column;
           text-align: center;}
@@ -86,9 +90,9 @@ body {line-height: 2.5;
 .foot-box {width: 100%;}
 }
 /*Footer End*/
-/*Universal Tags End////////////////////////////////////////////////////////////////////////////////////Universal Tags End*/
+/*Universal Tags End////////////////////////////////////////////////////////////////////////////////Universal Tags End*/
 
-/*Home Tags Start------------------------------------------------------------------------------------------Home Tags Start*/
+/*Home Tags Start--------------------------------------------------------------------------------------Home Tags Start*/
 .home-head {display: flex;
             text-align: center;
             flex-direction: column;
@@ -96,7 +100,7 @@ body {line-height: 2.5;
             margin-bottom: 15px;
             padding: 15px;
             background-color: #262626;
-            color: #fccc61;
+            color: #FFD373;
             width: 1000px;}
 
 .intro-box {display:flex;
@@ -112,22 +116,80 @@ body {line-height: 2.5;
              width: 1000px;}
 
 .photo-boxes {display: flex;
+              flex-direction: row;
+              padding: 5px;
               flex-wrap: wrap;}
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 1000px){
 .home-head {width: 90%;}
 .photo-boxes {flex-direction: column;}
 }
-/*Home Tags End///////////////////////////////////////////////////////////////////////////////////////////////Home Tags End*/
+/*Home Tags End//////////////////////////////////////////////////////////////////////////////////////////Home Tags End*/
 
-/*About Tags Start-----------------------------------------------------------------------------------------About Tags Start*/
+/*Plan Tags Start--------------------------------------------------------------------------------------Plan Tags Start*/
+.plan-head {display: flex;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #262626;
+            color: #FFD373;
+            width: 1000px;}
+
+.plan-text {display: flex;
+             background-color: #ffe09a;
+             text-align: center;
+             color: #211c1c;
+             border-style: solid;
+             border-color: #211c1c;
+             width: 1000px;
+             margin-bottom: 15px;
+             margin-top: 15px;}
+
+.tables {display: flex;
+         flex-wrap: wrap;
+         width: 1000px;}
+
+tr, td {border: 1px solid black;}
+
+table {background-color: #fff0ce;
+       border-style: solid;
+       border-color: #211c1c;
+       width: 100%;}
+
+th {color: #ffd373;
+    background-color: #211c1c;}
+
+tr {color: #211c1c;}
+
+td {text-align: center;}
+
+@media screen and (max-width: 1000px){
+    .plan-head {width: 90%;}
+    .plan-text {width: 90%;}
+    .tables {width: 90%;}
+    
+    td {overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;}
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    table {
+        overflow-x: auto;
+        display: block;}
+}
+/*Plan Tags End//////////////////////////////////////////////////////////////////////////////////////////Plan Tags End*/
+
+/*About Tags Start------------------------------------------------------------------------------------About Tags Start*/
 .about-head {display: flex;
              text-align: center;
              align-content: center;
              margin-top: 15px;
              margin-bottom: 15px;
              background-color: #262626;
-             color: #fccc61;
+             color: #FFD373;
              width: 285px;}
 
 .about-box {display: flex;
@@ -162,20 +224,80 @@ body {line-height: 2.5;
 .enter-info {width: 400px;
              height: 200px;}
 
-@media screen and (max-width: 599px){
+
+@media screen and (max-width: 600px){
 .about-head {width: 90%;}
 .info-box {width: 90%;}
 .enter-email {width: 90%;}
 .enter-info {width: 90%;}
 .enter-name {width: 90%;} 
 }
-/*About Tags End/////////////////////////////////////////////////////////////////////////////////////////////About Tags End*/
+/*About Tags End////////////////////////////////////////////////////////////////////////////////////////About Tags End*/
 
-/*Explore Tags Start*/
-.explore-boxes {display: flex;
-                flex-wrap: wrap;
-                color: aqua;}
+/*Explore Tags Start--------------------------------------------------------------------------------Explore Tags Start*/     
+.explore-head {display: flex;
+               text-align: center;
+               margin-top: 15px;
+               margin-bottom: 15px;
+               background-color: #262626;
+               color: #FFD373;
+               width: 300px;}
 
-.link-head {background-color: black;
-            text-align: center;}
-/*Explore Tags End*/
+.explore-boxes {margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;}
+
+.link-box {padding-bottom: 15px;}
+
+.link-head {background-color: #262626;
+            color: #ffd373;
+            text-align: center;
+            width: 200px;}
+
+@media screen and (max-width: 600px){
+.explore-boxes {flex-direction: column;}
+.explore-head {width: 90%;
+               object-width: contain;}
+.link-box {max-width: 100%;
+           object-width: contain;}
+.link-head{max-width: 100%;
+           object-width: contain;}
+}
+/*Explore Tags End/////////////////////////////////////////////////////////////////////////////////////Explore Tags End*/
+
+/*Explore Pages (Venue, Thrills, Sights) Tags Start-------------------Explore Pages (Venue, Thrills, Sights) Tags Start*/
+.shared-head {display: flex;
+             text-align: center;
+             align-content: center;
+             margin-top: 15px;
+             margin-bottom: 15px;
+             background-color: #262626;
+             color: #FFD373;
+             width: 500px;}
+
+.shared-boxes {display: flex;
+               flex-direction: column;
+               text-align: center;
+                margin-bottom: 25px;}
+
+.shared-title {background-color: #262626;
+               text-align: center;
+               color: #7ce2ba;
+               width: 1000px;}
+
+.shared-text {background-color: #ffe09a;
+             color: #211c1c;
+             border-style: solid;
+             border-color: #211c1c;
+             width: 1000px;}
+
+@media screen and (max-width: 1000px){
+.shared-text {object-width: contain;
+              max-width: 100%;}
+.shared-head {object-width: contain;
+              max-width: 100%;}
+.shared-title {object-width: contain;
+              max-width: 100%;}
+}
+/*Explore Pages (Venue, Thrills, Sights) Tags End///////////////////////Explore Pages (Venue, Thrills, Sights) Tags End*/

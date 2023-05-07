@@ -5,6 +5,8 @@
 <title>ExploreGoYonder</title>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://use.typekit.net/kjz7cqs.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -25,21 +27,36 @@
         </ul>
     </nav>
     
+    <section>
+        <div class="explore-head">
+            <h1>Click Which Image To Explore</h1>
+        </div>
+    </section>
+    
      <section>
         <div class="explore-boxes">
             <div class="link-box">
-                <h2 class="link-head"><a href="#">Venues</a></h2>
-                <img src="img/theater.jpg" alt="theater in downtown">
+                <h2 class="link-head">Venues</h2>
+                <img src="img/theater.jpg" alt="majestic theater downtown" usemap="#venuemap">
+                <map name="venuemap">
+                <area shape="rect" coords="0,0,200,250" alt="majestic theater downtown" href="venues.html">
+                </map>
             </div> <!--"img-box"-->
         
             <div class="link-box">
-                <h2 class="link-head"><a href="#">Thrills</a></h2>
-                <img src="img/exattractions.jpg" alt="faris wheel">
+                <h2 class="link-head">Thrills</h2>
+                <img src="img/exattractions.jpg" alt="faris wheel" usemap="#thrillmap">
+                <map name="thrillmap">
+                <area shape="rect" coords="0,0,200,250" alt="faris wheel" href="thrills.html">
+                </map>
             </div> <!--"img-box"-->
         
             <div class="link-box">
-                <h2 class="link-head"><a href="#">Sights</a></h2>
-                <img src="img/exvenues.jpg" alt="image of brewery of san antonio texas">
+                <h2 class="link-head">Sights</h2>
+                <img src="img/exvenues.jpg" alt="brewery of san antonio texas" usemap="#sightsmap">
+                <map name="sightsmap">
+                <area shape="rect" coords="0,0,200,250" alt="brewery of san antonio texas" href="sights.html">
+                </map>
             </div> <!--"img-box"-->
         </div>
     </section>
